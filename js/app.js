@@ -1,5 +1,5 @@
-const input01 = document.getElementById('Valor01');
-const input02 = document.getElementById('Valor02');
+const input01 = document.getElementById('valor01');
+const input02 = document.getElementById('valor02');
 
 const resultado = document.getElementById('resultado');
 
@@ -16,7 +16,7 @@ function calcularTotal(){
 
         resultado.innerHTML = `   
         <h1>Total da Compra</h1>
-        <li>O valor total da sua compra será de: ${v1} * ${v2} = <span>${v1 * v2}</span> </li>
+        <li>O valor total da sua compra será de:  = <span>${v1 * v2}</span> </li>
         `
     };
 
@@ -25,7 +25,7 @@ function calcularTotal(){
 function desconto(){
     const v1 = parseFloat(input01.value);
     const v2 = parseFloat(input02.value);
-    desconto = (v1 * v2)/100
+    const desconto = (v1 * v2)/100
 
     
 
@@ -48,7 +48,7 @@ function desconto(){
 function juros(){
     const v1 = parseFloat(input01.value);
     const v2 = parseFloat(input02.value);
-    acrescimo = (v1 * v2)/100
+    const acrescimo = (v1 * v2)/100
 
     
 
@@ -60,9 +60,7 @@ function juros(){
         resultado.style.display = 'flex';
 
         
-        resultado.innerHTML = `
-            <li>Valor 01 digitado pelo usuário: <span> ${v1} </span> </li>
-            <li>Valor 02 digitado pelo usuário: <span>${v2}</span> </li>       
+        resultado.innerHTML = `    
             <li>O acréscimo será de ${v1} % ${v2} = <span>${acrescimo}</span> </li>
             <li>O valor total com o acréscimo é: <span>${v1 + acrescimo}
         `
@@ -81,10 +79,8 @@ function comissao(){
 
         resultado.style.display = 'flex';
 
-        resultado.innerHTML = `
-            <li>Valor 01 digitado pelo usuário: <span> ${v1} </span> </li>
-            <li>Valor 02 digitado pelo usuário: <span>${v2}</span> </li>       
-            <li>A comissão será de ${v2} % ${v1} = <span>${(v1 * v2)/100}</span> </li>
+        resultado.innerHTML = `        
+            <li>A sua comissão será de ${v2} % ${v1} = <span>${(v1 * v2)/100}</span> </li>
         `
     };
 };
@@ -100,10 +96,8 @@ function lucro(){
 
         resultado.style.display = 'flex';
 
-        resultado.innerHTML = `
-            <li>Valor 01 digitado pelo usuário: <span> ${v1} </span> </li>
-            <li>Valor 02 digitado pelo usuário: <span>${v2}</span> </li>       
-            <li>O lucro será de ${v1} % ${v2} = <span>${(v1 - v2)}</span> </li>
+        resultado.innerHTML = `      
+            <li>O seu lucro será de ${v1} % ${v2} = <span>${(v1 - v2)}</span> </li>
         `
     };
 
