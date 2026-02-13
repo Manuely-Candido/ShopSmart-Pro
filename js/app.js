@@ -16,7 +16,7 @@ function calcularTotal(){
 
         resultado.innerHTML = `   
         <h1>Total da Compra</h1>
-        <li>O valor da compra será de: ${v1} * ${v2} = <span>${v1 * v2}</span> </li>
+        <li>O valor total da sua compra será de: ${v1} * ${v2} = <span>${v1 * v2}</span> </li>
         `
     };
 
@@ -37,9 +37,7 @@ function desconto(){
         resultado.style.display = 'flex';
 
         
-        resultado.innerHTML = `
-            <li>Valor 01 digitado pelo usuário: <span> ${v1} </span> </li>
-            <li>Valor 02 digitado pelo usuário: <span>${v2}</span> </li>       
+        resultado.innerHTML = `       
             <li>O desconto será de ${v1} % ${v2} = <span>${desconto}</span> </li>
             <li>O valor total com o desconto é: <span>${v1 - desconto}
         `
