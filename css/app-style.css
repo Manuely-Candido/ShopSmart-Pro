@@ -1,3 +1,142 @@
-body{
-    background-color: rgb(133, 190, 243);
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(60, 128, 196);
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  
+
+  .card {
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  .inputs {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }  
+  
+  .input-group label {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  
+  .buttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    background: #4facfe;
+    color: white;
+  }
+  
+  button:hover {
+    box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+  }
+
+  /* Botão limpar */
+  .btn-clear {
+    background: #ff5f6d;
+  }
+  
+  /* Resultado */
+  .resultado {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .resultado h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #4facfe;
+    margin-bottom: 10px;
+  }
+  
+  .resultado li {
+    list-style: none;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .resultado span {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+  }
+
+  
+ 
+  
+
+
+

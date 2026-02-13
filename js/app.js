@@ -8,15 +8,15 @@ function calcularTotal(){
     const v2 = parseFloat(input02.value);
 
     if(isNaN(v1)  || isNaN(v2)) {
-        alert('Valor 01 ou Valor02 inválido. Digite um número.');
+        resultado.innerHTML = `Valor01 ou Valor02 inválido. Digite um número.`
 
     } else {
 
         resultado.style.display = 'flex';
 
         resultado.innerHTML = `   
-        <h1>Total da Compra</h1>
-        <li>O valor total da sua compra será de:  = <span>${v1 * v2}</span> </li>
+        <h2>Total da Compra</h2>
+        <li>O valor total da sua compra será de <span>R$${v1 * v2}</span> </li>
         `
     };
 
@@ -27,19 +27,18 @@ function desconto(){
     const v2 = parseFloat(input02.value);
     const desconto = (v1 * v2)/100
 
-    
-
     if(isNaN(v1)  || isNaN(v2)) {
-        alert('Valor 01 ou Valor02 inválido. Digite um número.');
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
 
     } else {
 
         resultado.style.display = 'flex';
 
         
-        resultado.innerHTML = `       
-            <li>O desconto será de ${v1} % ${v2} = <span>${desconto}</span> </li>
-            <li>O valor total com o desconto é: <span>${v1 - desconto}
+        resultado.innerHTML = ` 
+            <h2>Desconto</h2>      
+            <li>O desconto será de ${v2}% ${v1} = <span>${desconto}</span> </li>
+            <li>O valor total com o desconto é <span>R$${v1 - desconto}
         `
     };
 
@@ -53,16 +52,17 @@ function juros(){
     
 
     if(isNaN(v1)  || isNaN(v2)) {
-        alert('Valor 01 ou Valor02 inválido. Digite um número.');
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
 
     } else {
 
         resultado.style.display = 'flex';
 
         
-        resultado.innerHTML = `    
-            <li>O acréscimo será de ${v1} % ${v2} = <span>${acrescimo}</span> </li>
-            <li>O valor total com o acréscimo é: <span>${v1 + acrescimo}
+        resultado.innerHTML = `
+            <h2>Juros</h2>    
+            <li>O acréscimo será de ${v2}% sobre o valor de ${v1} = <span>${acrescimo}</span> </li>
+            <li>O valor total com o acréscimo é R$<span>${v1 + acrescimo}
         `
     };
 
@@ -73,14 +73,16 @@ function comissao(){
     const v2 = parseFloat(input02.value);
 
     if(isNaN(v1)  || isNaN(v2)) {
-        alert('Valor 01 ou Valor02 inválido. Digite um número.');
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
 
     } else {
 
         resultado.style.display = 'flex';
 
-        resultado.innerHTML = `        
-            <li>A sua comissão será de ${v2} % ${v1} = <span>${(v1 * v2)/100}</span> </li>
+        resultado.innerHTML = `
+            <h2>Comissão</h2>        
+            <li>A sua comissão de ${v2}% sobre uma venda de ${v1} 
+            <li>A comissão será de <span>R$${(v1 * v2)/100}</span> </li>
         `
     };
 };
@@ -90,14 +92,17 @@ function lucro(){
     const v2 = parseFloat(input02.value);
 
     if(isNaN(v1)  || isNaN(v2)) {
-        alert('Valor 01 ou Valor02 inválido. Digite um número.');
+        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
 
     } else {
 
         resultado.style.display = 'flex';
 
-        resultado.innerHTML = `      
-            <li>O seu lucro será de ${v1} % ${v2} = <span>${(v1 - v2)}</span> </li>
+        resultado.innerHTML = `
+            <h2>Lucro</h2>
+            <li>O preço da venda foi R$ ${v1}</li>
+            <li>O seu custo foi de R$ ${v2}<?li>     
+            <li>O seu lucro será de <span>R$${(v1 - v2)}</span> </li>
         `
     };
 
