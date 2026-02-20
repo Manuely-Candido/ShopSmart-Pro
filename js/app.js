@@ -93,8 +93,8 @@ function comissao(){
         resultado.innerHTML = `
             <h2>Comissão</h2>   
             <ul>   
-                <li>A sua comissão de ${v2}% sobre uma venda de R$ ${v1.toFixed(2)} </li>
-                <li>A comissão será de <span>R$ ${((v1 * v2)/100).toFixed(2)}</span> </li>
+                <li>A sua comissão foi de ${v2}% sobre uma venda de R$ ${v1.toFixed(2)} </li>
+                <li>O valor total da sua comissão será de <span>R$ ${((v1 * v2)/100).toFixed(2)}</span> </li>
             </ul>
         `
     };
