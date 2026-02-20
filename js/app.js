@@ -16,7 +16,9 @@ function calcularTotal(){
 
         resultado.innerHTML = `   
         <h2>Total da Compra</h2>
-        <li>O valor total da sua compra será de <span>R$${v1 * v2.toFixed(2)}</span> </li>
+        <ul>
+            <li>O valor total da sua compra será de <span>R$${v1 * v2.toFixed(2)}</span> </li>
+        </ul>
         `
     };
 
@@ -36,9 +38,11 @@ function desconto(){
 
         
         resultado.innerHTML = ` 
-            <h2>Desconto</h2>      
-            <li>O desconto será de ${v2}% R$${v1.toFixed(2)} = <span>R$${desconto.toFixed(2)}</span> </li>
-            <li>O valor total com o desconto é <span>R$${v1 - desconto.toFixed(2)}</span> </li>
+            <h2>Desconto</h2>  
+            <ul>    
+                <li>O desconto será de ${v2}% R$${v1.toFixed(2)} = <span>R$${desconto.toFixed(2)}</span> </li>
+                <li>O valor total com o desconto é <span>R$${v1 - desconto.toFixed(2)}</span> </li>
+            </ul>
         `
     };
 
@@ -61,8 +65,10 @@ function juros(){
         
         resultado.innerHTML = `
             <h2>Juros</h2>    
-            <li>O acréscimo será de ${v2}% sobre o valor de R$${v1.toFixed(2)} = <span>R$${acrescimo.toFixed(2)}</span> </li>
-            <li>O valor total com o acréscimo é <span>R$${v1 + acrescimo.toFixed(2)}</span> </li>
+            <ul> 
+                <li>O acréscimo será de ${v2}% sobre o valor de R$${v1.toFixed(2)} = <span>R$${acrescimo.toFixed(2)}</span> </li>
+                <li>O valor total com o acréscimo é <span>R$${v1 + acrescimo.toFixed(2)}</span> </li>
+            </ul>
         `
     };
 
@@ -80,9 +86,11 @@ function comissao(){
         resultado.style.display = 'flex';
 
         resultado.innerHTML = `
-            <h2>Comissão</h2>        
-            <li>A sua comissão de ${v2}% sobre uma venda de R$${v1.toFixed(2)} </li>
-            <li>A comissão será de <span>R$${((v1 * v2)/100).toFixed(2)}</span> </li>
+            <h2>Comissão</h2>   
+            <ul>   
+                <li>A sua comissão de ${v2}% sobre uma venda de R$${v1.toFixed(2)} </li>
+                <li>A comissão será de <span>R$${((v1 * v2)/100).toFixed(2)}</span> </li>
+            </ul>
         `
     };
 };
@@ -100,9 +108,11 @@ function lucro(){
 
         resultado.innerHTML = `
             <h2>Lucro</h2>
-            <li>O preço da venda foi R$${v1.toFixed(2)}</li>
-            <li>O seu custo foi de R$${v2.toFixed(2)}</li>     
-            <li>O seu lucro será de <span>R$${(v1 - v2).toFixed(2)}</span> </li>
+            <ul> 
+                <li>O preço da venda foi R$${v1.toFixed(2)}</li>
+                <li>O seu custo foi de R$${v2.toFixed(2)}</li>     
+                <li>O seu lucro será de <span>R$${(v1 - v2).toFixed(2)}</span> </li>
+            </ul>
         `
     };
 
