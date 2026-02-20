@@ -72,7 +72,7 @@ function juros(){
         resultado.innerHTML = `
             <h2>Juros</h2>    
             <ul> 
-                <li>O acréscimo será de ${v2}% sobre o valor de R$${v1.toFixed(2)}</span> </li>
+                <li>O acréscimo será de ${v2}% sobre o valor de R$ ${v1.toFixed(2)}</span> </li>
                 <li>O valor total com o acréscimo será de <span>R$ ${total.toFixed(2)}</span> </li>
             </ul>
         `
