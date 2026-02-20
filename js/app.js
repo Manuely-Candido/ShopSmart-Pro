@@ -42,8 +42,9 @@ function desconto(){
         resultado.innerHTML = ` 
             <h2>Desconto</h2>  
             <ul>    
-                <li>O desconto será de ${v2}% R$ ${v1.toFixed(2)} = <span>R$ ${desconto.toFixed(2)}</span> </li>
-                <li>O valor total com o desconto é <span>R$ ${v1 - desconto.toFixed(2)}</span> </li>
+                <li>Foi aplicado um desconto de ${v2}% sobre uma compra de R$ ${v1.toFixed(2)}. </li>
+                <li>O valor do desconto será de <span>R$ ${desconto.toFixed(2)}</span> </li>
+                <li>E o valor total da compra com o desconto é <span>R$ ${v1 - desconto.toFixed(2)}</span> </li>
             </ul>
         `
     };
