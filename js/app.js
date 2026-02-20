@@ -8,7 +8,8 @@ function calcularTotal(){
     const v2 = parseFloat(input02.value);
 
     if(isNaN(v1)  || isNaN(v2)) {
-        resultado.innerHTML = `Valor01 ou Valor02 inválido. Digite um número.`
+        resultado.style.display = 'flex';
+        resultado.innerHTML = '<p>Valor 01 ou Valor 02 inválido. Digite um número.</p>'
 
     } else {
 
@@ -17,7 +18,7 @@ function calcularTotal(){
         resultado.innerHTML = `   
         <h2>Total da Compra</h2>
         <ul>
-            <li>O valor total da sua compra será de <span>R$${v1 * v2.toFixed(2)}</span> </li>
+            <li>O valor total da sua compra será de <span>R$ ${v1 * v2.toFixed(2)}</span> </li>
         </ul>
         `
     };
@@ -30,7 +31,8 @@ function desconto(){
     const desconto = (v1 * v2)/100
 
     if(isNaN(v1)  || isNaN(v2)) {
-        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
+        resultado.style.display = 'flex';
+        resultado.innerHTML = '<p>Valor 01 ou Valor 02 inválido. Digite um número.</p>'
 
     } else {
 
@@ -40,8 +42,8 @@ function desconto(){
         resultado.innerHTML = ` 
             <h2>Desconto</h2>  
             <ul>    
-                <li>O desconto será de ${v2}% R$${v1.toFixed(2)} = <span>R$${desconto.toFixed(2)}</span> </li>
-                <li>O valor total com o desconto é <span>R$${v1 - desconto.toFixed(2)}</span> </li>
+                <li>O desconto será de ${v2}% R$ ${v1.toFixed(2)} = <span>R$ ${desconto.toFixed(2)}</span> </li>
+                <li>O valor total com o desconto é <span>R$ ${v1 - desconto.toFixed(2)}</span> </li>
             </ul>
         `
     };
@@ -56,7 +58,8 @@ function juros(){
     
 
     if(isNaN(v1)  || isNaN(v2)) {
-        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
+        resultado.style.display = 'flex';
+        resultado.innerHTML = '<p>Valor 01 ou Valor 02 inválido. Digite um número.</p>'
 
     } else {
 
@@ -66,8 +69,8 @@ function juros(){
         resultado.innerHTML = `
             <h2>Juros</h2>    
             <ul> 
-                <li>O acréscimo será de ${v2}% sobre o valor de R$${v1.toFixed(2)} = <span>R$${acrescimo.toFixed(2)}</span> </li>
-                <li>O valor total com o acréscimo é <span>R$${v1 + acrescimo.toFixed(2)}</span> </li>
+                <li>O acréscimo será de ${v2}% sobre o valor de R$${v1.toFixed(2)} = <span>R$ ${acrescimo.toFixed(2)}</span> </li>
+                <li>O valor total com o acréscimo é <span>R$ ${v1 + acrescimo.toFixed(2)}</span> </li>
             </ul>
         `
     };
@@ -79,7 +82,8 @@ function comissao(){
     const v2 = parseFloat(input02.value);
 
     if(isNaN(v1)  || isNaN(v2)) {
-        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
+        resultado.style.display = 'flex';
+        resultado.innerHTML = '<p>Valor 01 ou Valor 02 inválido. Digite um número.</p>'
 
     } else {
 
@@ -88,8 +92,8 @@ function comissao(){
         resultado.innerHTML = `
             <h2>Comissão</h2>   
             <ul>   
-                <li>A sua comissão de ${v2}% sobre uma venda de R$${v1.toFixed(2)} </li>
-                <li>A comissão será de <span>R$${((v1 * v2)/100).toFixed(2)}</span> </li>
+                <li>A sua comissão de ${v2}% sobre uma venda de R$ ${v1.toFixed(2)} </li>
+                <li>A comissão será de <span>R$ ${((v1 * v2)/100).toFixed(2)}</span> </li>
             </ul>
         `
     };
@@ -100,7 +104,8 @@ function lucro(){
     const v2 = parseFloat(input02.value);
 
     if(isNaN(v1)  || isNaN(v2)) {
-        resultado.innerHTML = `Valor 01 ou Valor 02 inválido. Digite um número.`
+        resultado.style.display = 'flex';
+        resultado.innerHTML = '<p>Valor 01 ou Valor 02 inválido. Digite um número.</p>'
 
     } else {
 
@@ -109,9 +114,9 @@ function lucro(){
         resultado.innerHTML = `
             <h2>Lucro</h2>
             <ul> 
-                <li>O preço da venda foi R$${v1.toFixed(2)}</li>
-                <li>O seu custo foi de R$${v2.toFixed(2)}</li>     
-                <li>O seu lucro será de <span>R$${(v1 - v2).toFixed(2)}</span> </li>
+                <li>O preço da venda foi R$ ${v1.toFixed(2)}</li>
+                <li>O seu custo foi de R$ ${v2.toFixed(2)}</li>     
+                <li>O seu lucro será de <span>R$ ${(v1 - v2).toFixed(2)}</span> </li>
             </ul>
         `
     };
